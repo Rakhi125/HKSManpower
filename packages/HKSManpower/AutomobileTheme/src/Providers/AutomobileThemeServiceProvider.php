@@ -26,6 +26,10 @@ class AutomobileThemeServiceProvider extends ServiceProvider
             __DIR__ . '/../../publishable/assets' => public_path('themes/default/assets'),
         ], 'public');
 
+        $this->publishes([
+            __DIR__ . '/../Resources/views/shop' => resource_path('themes/automobile/views'),
+        ]);
+
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'automobiletheme');
 
         Event::listen('bagisto.admin.layout.head', function($viewRenderEventManager) {
