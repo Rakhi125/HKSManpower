@@ -14,6 +14,8 @@ class AutomobileThemeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app->register(EventServiceProvider::class);
+
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
         $this->loadRoutesFrom(__DIR__ . '/../Http/admin-routes.php');
@@ -23,7 +25,7 @@ class AutomobileThemeServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'automobiletheme');
 
         $this->publishes([
-            __DIR__ . '/../../publishable/assets' => public_path('themes/default/assets'),
+            __DIR__ . '/../../publishable/assets' => public_path('themes/automobile/assets'),
         ], 'public');
 
         $this->publishes([

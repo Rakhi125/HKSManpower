@@ -5,8 +5,7 @@ Route::group([
         'middleware' => ['web', 'theme', 'locale', 'currency']
     ], function () {
 
-        Route::get('/', 'HKSManpower\AutomobileTheme\Http\Controllers\Shop\AutomobileThemeController@index')->defaults('_config', [
-            'view' => 'automobiletheme::shop.index',
-        ])->name('shop.automobiletheme.index');
+        Route::get('/trending-products', 'HKSManpower\AutomobileTheme\Http\Controllers\Shop\AutomobileThemeController@getTrendingProducts')
+            ->name('shop.automobiletheme.trending-products');
 
 });
