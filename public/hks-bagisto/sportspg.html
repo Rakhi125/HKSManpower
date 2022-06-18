@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<title>Spares And Wears</title>
+<script type="text/javascript">
+  $('#multi9').mdbRange({
+  width: '25%',
+  single: {
+    active: true,
+    multi: {
+      active: true,
+      rangeLength: 2
+    },
+  }
+});
+</script>
+</head>
+<body style="overflow-x: hidden;    background-color: #ececec;">
+  <!-- Ajax and jQuery link -->
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script> 
+<link rel="stylesheet" href="css/home.css" />
+ <script> 
+  $(function(){
+  $("#header").load("automotive-header.html");
+  $("#category").load("sections/sports/sports-category.html");
+  $("#search-by-category").load("sections/sports/search-by-category-sports.html");
+  $("#carousel").load("sections/home/carousel-items.html");
+  $("#carousel-trending").load("sections/home/carousel-items.html");
+  $("#bulk-deals").load("sections/home/bulk-deals.html");
+  $("#popular-in-sports").load("sections/sports/sports-popular.html");
+  $("#footer").load("footer1.html");
+  });
+ </script>
+ <!----- header --------------------->
+
+ <div id="header"></div>
+
+ <!----- automotive section 1--------------------->
+<div class="p-0" id="category"></div>
+
+<!------------- search by categories---------------------->
+<div class="p-4" id="search-by-category"></div>
+<!--------------------------------------------------- Offers In Automotive --------------------------------------------------->
+
+    <div class="offers-section container-fluid px-4 p-4">
+      <div id="carouselExampleControlsoffersauto" class="carousel slide bg-white px-5 py-3" data-ride="carousel">
+        <p class="h1 offers mb-5">
+          Offers in <span style="color: #0074b2">Sports</span>
+        </p>
+
+      <!---------------------------------------------------- import inner carousel here from carousel-items.html file---------------------------------------------------->
+        <span class="m-0 p-0" id="carousel"></span>
+  
+        <a class="carousel-control-prev circle" href="#carouselExampleControlsoffersauto" role="button" style="width:3%;opacity:1" data-slide="prev">
+          <div style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+            <img src="assets/prev-next/prev.svg" style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+            <span class="sr-only" style="color: #000 !important">Previous</span>
+          </div>
+        </a>
+        <a class="carousel-control-next circle" href="#carouselExampleControlsoffersauto" role="button" style="width:3%;opacity:1" data-slide="next">
+          <div style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+            <img src="assets/prev-next/next 2.svg" style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+            <span class="sr-only" style="color: #000 !important">Next</span>
+          </div>
+        </a>
+        <div class="row"><button class="border-0 ml-auto mr-3 bg-transparent see-more">See more</button></div>
+      </div>
+    </div>
+<!--------------------------------------------------- Bulk Buying Deals --------------------------------------------------->
+    <div class="container-fluid p-4 bg-white" id="bulk-deals"></div>
+    
+    <!--------------------------------------------------- Popular Brands in household--------------------------------------------------->
+    <div class=" container-fluid py-4" id="popular-in-sports">
+  </div>
+
+    <!--------------------------------------------------- Trending in Automotive --------------------------------------------------->
+ <div class="offers-section container-fluid ">
+      <div id="carouselExampleControlsoffersauto" class="carousel slide bg-white px-5 py-3" data-ride="carousel">
+        <p class="h1 offers mb-5">
+          Trending in <span style="color: #0074b2">Sports</span>
+        </p>
+
+      <!---------------------------------------------------- import inner carousel here from carousel-items.html file---------------------------------------------------->
+        <span class="m-0 p-0" id="carousel-trending"></span>
+  
+        <a class="carousel-control-prev circle" href="#carouselExampleControlsoffersauto" role="button" style="width:3%;opacity:1" data-slide="prev">
+          <div style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+            <img src="assets/prev-next/prev.svg" style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+            <span class="sr-only" style="color: #000 !important">Previous</span>
+          </div>
+        </a>
+        <a class="carousel-control-next circle" href="#carouselExampleControlsoffersauto" role="button" style="width:3%;opacity:1" data-slide="next">
+          <div style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+            <img src="assets/prev-next/next 2.svg" style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+            <span class="sr-only" style="color: #000 !important">Next</span>
+          </div>
+        </a>
+        <div class="row"><button class="border-0 ml-auto mr-3 bg-transparent see-more">See more</button>
+        </div>
+      </div>
+    </div>
+    
+ <!--------------------------------------------------- footer--------------------------------------------------->
+
+<div id="footer"></div>
+</html>

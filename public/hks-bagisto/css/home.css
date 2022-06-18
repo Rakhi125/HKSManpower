@@ -1,0 +1,662 @@
+    /** Top Category **/
+    body {
+        font-family: 'Open Sans' !important;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    {
+    font-family: 'Open Sans';
+    }
+
+    .product-category {
+        height: 12vh;
+    }
+
+    .product-category .bg-light {
+        background-color: #fff !important;
+    }
+
+    /** Catgeory logo height**/
+    .navbar-brand img {
+        width: 3.5vw;
+        height: 5vh;
+    }
+
+    /** Catgeory heading**/
+    .product-category figcaption {
+        font-size: 1.8vw;
+        color: #000;
+        font-weight: 400;
+        font-family: open sans-serif;
+        line-height: 2.5vw;
+        padding-top: 1.5vh;
+
+    }
+
+    /** Banner full width**/
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+
+    }
+
+    /** Border slider **/
+    .carousel-inner.my-inner {
+        border-left: 0px;
+        border-style: solid;
+        border-right: 0px;
+        border-color: #C4C4C4;
+        padding-bottom: 10vh;
+    }
+
+    .bullets li {
+
+        border: 0.995745px solid #000000;
+
+        cursor: pointer;
+        display: inline-block;
+        float: none;
+        height: 2.5vh;
+        width: 1.7vw;
+    }
+
+    .bullets li {
+        border-radius: 1000px;
+    }
+
+    .carousel-indicators .active {
+        background: rgba(196, 22, 28, 0.84);
+        border: none;
+    }
+
+    .newsletter .content {
+        max-width: 300px;
+        position: relative;
+        z-index: 2;
+        border: 3px solid #C4161C;
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+
+    .newsletter .content .form-control {
+        height: 50px;
+        border-color: #ffffff;
+        border-radius: 0;
+    }
+
+    .newsletter .content.form-control:focus {
+        box-shadow: none;
+        border: 2px solid #243c4f;
+    }
+
+    .newsletter .content .btn {
+        min-height: 50px;
+        border-radius: 0;
+        background: #C4161C;
+        color: #fff;
+        width: 50px;
+        font-weight: 600;
+    }
+
+
+    /*Header CSS*/
+    a.second:hover {
+        color: #C4161C !important;
+    }
+
+    a.second:hover img {
+        filter: invert(11%) sepia(81%) saturate(4676%) hue-rotate(349deg) brightness(109%) contrast(101%);
+    }
+
+    a.navbar-brand:hover {
+        filter: invert(12%) sepia(97%) saturate(3362%) hue-rotate(348deg) brightness(106%) contrast(98%);
+    }
+
+    a.navbar-brand:hover::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 7vw;
+        left: 50%;
+        transform: translate(-50%);
+        border: 1px solid #000;
+    }
+
+    a.cart .cart-basket {
+        font-size: .8vw;
+        position: absolute;
+        top: -25%;
+        right: -25%;
+        width: 1vw;
+        height: 1vw;
+        color: #fff;
+        background-color: #FF4500;
+        border-radius: 50%;
+    }
+
+    .dropdown:hover+.dropdown-content,
+    .dropdown2:hover+.dropdown-content2,
+    .dropdown3:hover+.dropdown-content3,
+    .dropdown4:hover+.dropdown-content4,
+    .dropdown5:hover+.dropdown-content5 {
+        display: inline-block;
+    }
+
+    @media only screen and (max-height: 840px) {
+        .dropdown-content5 {
+            top: 13.5%;
+        }
+    }
+
+    @media only screen and (min-height: 841px) {
+        .dropdown-content5 {
+            top: 13%;
+        }
+    }
+
+    @media only screen and (min-height: 901px) {
+        .dropdown-content5 {
+            top: 13%;
+        }
+    }
+
+    @media only screen and (min-height: 1051px) {
+        .dropdown-content5 {
+            top: 12.7%;
+        }
+    }
+
+    .dropdown-content,
+    .dropdown-content2,
+    .dropdown-content3,
+    .dropdown-content4,
+    .dropdown-content5 {
+        display: none;
+        margin: 0;
+        min-height: 58vh;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 90vw;
+        z-index: 16;
+    }
+
+    .nav a,
+    .nav p,
+    .nav span,
+    .nav input#q,
+    a.nav-link {
+        font-family: "Poppins";
+
+    }
+
+    .dropdown-content:hover,
+    .dropdown-content2:hover,
+    .dropdown-content3:hover,
+    .dropdown-content4:hover,
+    .dropdown-content5:hover {
+        display: block !important;
+    }
+
+    .dropdown-content .col a p,
+    .dropdown-content2 .col a p,
+    .dropdown-content3 .col a p,
+    .dropdown-content4 .col a p {
+        color: #000;
+        font-size: 0.73vw;
+        font-family: "Poppins" !important;
+    }
+
+    .dropdown-content .col a,
+    .dropdown-content2 .col a,
+    .dropdown-content3 .col a,
+    .dropdown-content4 .col a {
+        float: none;
+        font-size: 0.73vw;
+        font-family: "Poppins" !important;
+        color: #666565;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content .col a.pt-2,
+    .dropdown-content2 .col a.pt-2,
+    .dropdown-content3 .col a.pt-2,
+    .dropdown-content4 .col a.pt-2 {
+        font-family: 'Open Sans' !important;
+    }
+
+
+
+
+    .brand-category {
+        color: #908C8C;
+        font-family: 'Roboto' !important;
+        font-weight: 700;
+        border-bottom: 1px solid #908C8C;
+        width: fit-content;
+        font-size: 1.05vw;
+        line-height: 1.5em;
+    }
+
+    .brand-cat-list a {
+        text-decoration: none;
+        color: #908C8C;
+        font-weight: 400;
+        font-size: 1.03vw;
+        line-height: 1.5em;
+    }
+
+    .brand-cat-list a.active {
+        color: #000;
+    }
+
+    .brands-grid img {
+        width: 11.45vw;
+    }
+
+    p.top-brands {
+        font-family: 'Roboto';
+        font-size: 2vw;
+        line-height: 2em;
+        font-weight: 700;
+    }
+
+    /*Header CSS End*/
+
+
+
+
+
+
+
+
+
+
+
+
+    /*home page banner css*/
+    h5.card-title,
+    p.card-text {
+        font-size: .85vw;
+        line-height: 1.3em;
+    }
+
+    h5.card-title {
+        font-weight: 600;
+    }
+
+    p.card-text {
+        font-weight: 400;
+    }
+
+    p.del-price {
+        opacity: 70%;
+    }
+
+    span.price,
+    .see-more {
+        color: #C4161C;
+        font-weight: 600;
+    }
+
+    .h1.main-section-heading {
+        font-size: 1.85vw;
+        font-weight: 700;
+        line-height: 1.4em;
+    }
+
+    /*home page banner css END*/
+
+
+    /*Home Page Deals section*/
+    h1.deals.card-title.h1 {
+        font-size: 2.2vw;
+        color: #fff;
+        font-weight: 700;
+        line-height: 1.35em;
+    }
+
+    h1.deals.card-text {
+        font-size: 1.7vw;
+        font-weight: 600;
+        line-height: 1.3em;
+    }
+
+    .deals-col-1 {
+        max-width: 19.5% !important;
+    }
+
+    .deals.btn span {
+        font-size: 1.15vw;
+        line-height: 1.4em;
+    }
+
+    .deals-card-img,
+    .offers-card-img,
+    .trending-card-img {
+        border-bottom-left-radius: 1rem !important;
+        border-bottom-right-radius: 1rem !important;
+        box-shadow: 0px 3.731250047683716px 3.731250047683716px 0px #00000040 !important;
+    }
+
+    .offers-card-img,.cart-card-img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+        width: 12.3vw;
+        height: 28vh;
+    }
+
+    h5.deals.card-title {
+        font-size: 1.25vw;
+        line-height: 1.35em;
+        font-weight: 700;
+    }
+
+    p.deals.card-text {
+        font-size: 1.05vw;
+        line-height: 1.35em;
+    }
+
+    .deals-del-price {
+        font-size: .85vw;
+        color: #E5E5E5;
+        /*opacity: .5;*/
+        font-weight: 600;
+    }
+
+    .deals-price {
+        font-size: .85vw;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+
+    .deals-card-img {
+        height: 42.5vh;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1099px) {
+        div.deals.price.row {
+            position: absolute;
+            top: 92%;
+            right: 0%;
+        }
+    }
+
+    @media only screen and (min-width: 1100px) and (max-width: 1153px) {
+        div.deals.price.row {
+            position: absolute;
+            top: 93.5%;
+            right: 0%;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) and (max-width: 1439px) {
+        div.deals.price.row {
+            position: absolute;
+            top: 93%;
+            right: 0%;
+        }
+    }
+
+    @media only screen and (min-width: 1440px) and (max-width: 1599px) {
+        div.deals.price.row {
+            position: absolute;
+            top: 94%;
+            right: 0%;
+        }
+    }
+
+    @media only screen and (min-width: 1600px) and (max-width: 1919px) {
+        div.deals.price.row {
+            position: absolute;
+            top: 93.5%;
+            right: 0%;
+        }
+    }
+
+    @media only screen and (min-width: 1920px) {
+        div.deals.price.row {
+            position: absolute;
+            top: 93.6%;
+            right: 0%;
+        }
+    }
+
+    /*Home Page Deals section End   */
+
+
+
+
+    /*first purchase css*/
+
+    .first-purchase td h1.my-auto.bold {
+        font-weight: 700;
+        font-size: 2.65vw;
+        line-height: 150%;
+    }
+
+    .first-purchase td h1.my-auto.light {
+        font-weight: 300;
+        font-size: 2.65vw;
+        line-height: 150%;
+    }
+
+    /*first purchase css END*/
+
+
+    /*offers in automotive section*/
+    p.h1.offers {
+        font-size: 1.9vw;
+        font-weight: 700;
+        line-height: 1.35em;
+    }
+
+    .offers-section .carousel-control-prev,
+    .offers-section .carousel-control-next {
+        display: none;
+    }
+
+    .offers-section:hover .carousel-control-prev,
+    .offers-section:hover .carousel-control-next {
+        display: flex;
+    }
+
+
+
+    /*Trending section*/
+    .trending-card-img {
+        width: 14vw;
+        height: 26vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
+
+    .trending-blue-border {
+        border-radius: 1.5rem !important;
+        margin: -2% 0 0 -2%;
+    }
+
+    .blue-border {
+        border-radius: 1.5rem !important;
+        background-image: linear-gradient(to right, #44B0EA 40%, #0074B2);
+    }
+
+    /*offers in automotive section END*/
+    .signin td h1.my-auto.bold {
+        font-size: 1.36vw;
+        line-height: 1.35em;
+        font-weight: 700;
+    }
+
+    .signin-btn.btn span {
+        font-size: 1.25vw;
+        line-height: 1.7vw;
+        font-weight: 600;
+    }
+
+    /*popular brand in automotive START*/
+
+    .popular-auto-btn {
+        background: linear-gradient(180deg, rgba(0, 116, 178, 0.5) 0%, #0074B2 100%);
+        box-shadow: 0.652937px 0.652937px 1.30587px 0.326468px rgba(0, 0, 0, 0.15);
+        border-radius: 0.73vw;
+        font-size: 1.25vw;
+        color: #ffff;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        letter-spacing: 0.0075em;
+        width: 10.9vw;
+        height: 3.63vw;
+        border: none;
+
+    }
+
+    .popular-auto-border {
+        position: relative;
+        margin: 0.5vw 1vw;
+        max-width: 2px !important;
+        height: 20vh;
+        opacity: .3;
+        background-color: #000;
+        opacity;
+
+    }
+
+    /*popular brand in automotive END*/
+
+    /*Automotive-categories START*/
+
+    .automo-category {
+        text-align: center;
+        color: #0074B2;
+        border-radius: .5vw;
+        background-color: #ffff;
+        border-color: #0074B2;
+        font-size: .85vw;
+        font-weight: 600;
+        width: 16.83vw;
+        height: 2.916vw
+    }
+
+    .automo-cat-btns {
+        font-size: 0.73vw;
+        font-weight: 400;
+        color: #ffff;
+        background-color: #0074B2;
+        border: none;
+        letter-spacing: 0.022em;
+        width: 14.2vw;
+        height: 2.1vw;
+    }
+
+    .automo-cat-btns-1 {
+        font-size: 0.73vw;
+        font-weight: 400;
+        color: #19191D;
+        background-color: #ffff;
+        border: none;
+        letter-spacing: 0.022em;
+        width: 14.2vw;
+        height: 2.1vw;
+        text-align: left;
+    }
+
+    .catogry-sections {
+        font-size: 0.73vw;
+        font-weight: 400;
+        color: #19191D;
+        background-color: none;
+        letter-spacing: 0.022em;
+        text-align: left;
+    }
+
+    .search-vehicle-btns-lg {
+        font-size: .85vw;
+        font-weight: 400;
+        color: #787885;
+        border-color: #0074B2;
+    }
+
+    .search-btn-vehicle-lg {
+        font-size: 1.05vw;
+        background-color: #0074B2;
+        color: #fff;
+        width: 11.61vw;
+        height: 2.3vw;
+    }
+
+    /*Automotive-categories END*/
+
+    /*Search-by-category START*/
+
+    .customer-ratings {
+        text-align: left;
+        font-size: 1.03vw;
+        font-weight: 400;
+        font-color: #19191D;
+        border: none;
+    }
+
+    .search-by-vehicle {
+        text-align: left;
+        font-size: .85vw;
+        font-weight: 400;
+        color: #787885;
+        border-radius: .2rem;
+        border-color: #0074B2;
+    }
+
+    .search-btn-vehicle-sm {
+        font-size: 1.05vw;
+        text-align: center;
+        background-color: #0074B2;
+        color: #fff;
+        border-radius: .2rem;
+        width: 100%;
+    }
+
+    .search-categories-img {
+        width: 7.81vw;
+        height: 7.81;
+    }
+
+    .search-categories-txt {
+        font-size: 0.84vw;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    /*Search-by-category END*/
+
+    /*+57-more-btn START*/
+
+    .more57-btn {
+        color: #C4161C;
+        font-size: 0.73vw;
+        font-weight: 400;
+        align-items: end;
+        letter-spacing: 0.022em;
+        background: none;
+    }
+
+    /*+57-more-btn END*/

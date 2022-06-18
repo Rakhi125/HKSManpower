@@ -1,0 +1,352 @@
+<!------------------------------------ Customer Ratings --------------------->
+<div class="container-fluid bg-white">
+    <div class="row p-4 px-5">
+        <div class="col-3 p-4">
+            <select class="form-select py-2 px-3 w-100 customer-ratings bg-light" id="sel1" name="sellist1">
+                <option>Customer Ratings</option>
+            </select>
+            <form action="/action_page.php" class="  bg-light customer-ratings">
+                <div class="form-check py-1 ml-3  ">
+                    <input type="radio" class="form-check-input " id="radio1" name="optradio" value="option1" checked>
+                    <label class="form-check-label px-4 ml-1" for="radio1">4★ & above</label>
+                </div>
+                <div class="form-check py-1 ml-3">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label px-4 ml-1" for="radio2">3★ & above</label>
+                </div>
+                <div class="form-check py-1 ml-3">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label px-4 ml-1" for="radio2">2★ & above</label>
+                </div>
+                <div class="form-check py-1 ml-3">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label px-4 ml-1" for="radio2">1★ & above</label>
+                </div>
+
+            </form>
+
+
+            <!-------------------------- search by vehicle ---------------->
+
+
+
+            <div class="col py-4 mt-5 bg-light">
+                <p style="font-size: 0.73; font-weight: 700; ">Search by <span style="color: #0074b2">Vehicle</span>
+                </p>
+                <div class="col">
+                    <div class="col dropdown">
+                        <button type="button" class="btn dropdown-toggle search-vehicle-btns-lg w-100 "
+                            data-bs-toggle="dropdown">
+                            Brand
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col dropdown">
+                        <button type="button" class="btn dropdown-toggle search-vehicle-btns-lg w-100 mt-3"
+                            data-bs-toggle="dropdown">
+                            Vehicle
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col dropdown">
+                        <button type="button" class="btn dropdown-toggle search-vehicle-btns-lg w-100 mt-3"
+                            data-bs-toggle="dropdown">
+                            Model
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <button
+                            class="deals btn d-flex align-items-center search-btn-vehicle-lg py-2 px-5 p2 w-100 mt-3"
+                            style="">
+                            <span class="text-center ">Search</span>
+                            <img class="ml-5" src="assets/automotive/Vector.png" style="width: 0.94vw; height :0.94vw;">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!------------------------------------ search by categories--------------------->
+
+        <div class="col mr-3 p-2">
+
+            <div class="row search-categories-txt">
+                <div class="row">
+                    <form>
+                        <fieldset class="border sort-by p-2">
+                            <legend class="w-auto  ">SORT BY</legend>
+                            <select class="border-0">
+                               <option>Featured</option>
+                               <option>Featured</option>
+                               <option>Featured</option>
+                               <option>Featured</option>
+                               <option>Featured</option>
+                               <option>Featured</option>
+                           </select>
+                       </fieldset>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col p-0">
+                    <div class="p-0 h-100">
+                        <div style="">
+                            <div class="card border-1">
+                                <img src="assets/deals/Group 967.svg" style="margin-bottom:0;width:3vw;margin-top:0">
+                                <div class="cart-card-img mx-auto card border-0 overflow-hidden"
+                                    style="background-image:url('assets/product/42 1.png');">
+
+                                </div>
+                                <div class="trending card-body px-0 text-center">
+                                    <h5 class="card-title text-center mb-0">Disc Brake Pad</h5>
+                                    <p class="card-text">Mahindra Xylo</p>
+                                    <p class="card-text del-price"><del>&#x20b9;17.93</del><span
+                                            class="price">&nbsp;&nbsp;&#x20b9;13.45</span>
+                                    </p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+
+                                    <div>
+                                        <p class="quantity-txt ">Quantity :
+                                            <select class="form-select quantity-select " id="sel1" name="sellist1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn add-cart-btn w-100 py-2">Add to cart</button>
+                                    <div class="col py-2">
+                                        <button type="button"
+                                            class="btn btn-outline fullfilled-alp fa fa-check-square fa-2x"
+                                            aria-hidden="true">Fulfilled by ALP</button>
+                                        <button type="button"
+                                            class="btn btn-outline recommended-btn">Recommended</button>
+                                    </div>
+                                    <p class="get-it-by">Get it by : Tue, 5th May, 2022</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="col p-0">
+                    <div class="p-0 h-100">
+                        <div style="">
+                            <div class="card border-1">
+                                <img src="assets/deals/Group 967.svg" style="margin-bottom:0;width:3vw;margin-top:0">
+                                <div class="cart-card-img mx-auto card border-0 overflow-hidden"
+                                    style="background-image:url('assets/product/42 1.png');">
+
+                                </div>
+                                <div class="trending card-body px-0 text-center">
+                                    <h5 class="card-title text-center mb-0">Disc Brake Pad</h5>
+                                    <p class="card-text">Mahindra Xylo</p>
+                                    <p class="card-text del-price"><del>&#x20b9;17.93</del><span
+                                            class="price">&nbsp;&nbsp;&#x20b9;13.45</span>
+                                    </p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+
+                                    <div>
+                                        <p class="quantity-txt ">Quantity :
+                                            <select class="form-select quantity-select " id="sel1" name="sellist1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn add-cart-btn w-100 py-2">Add to cart</button>
+                                    <div class="col py-2">
+                                        <button type="button"
+                                            class="btn btn-outline fullfilled-alp fa fa-check-square fa-2x"
+                                            aria-hidden="true">Fulfilled by ALP</button>
+                                        <button type="button"
+                                            class="btn btn-outline recommended-btn">Recommended</button>
+                                    </div>
+                                    <p class="get-it-by">Get it by : Tue, 5th May, 2022</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="col p-0">
+                    <div class="p-0 h-100">
+                        <div style="">
+                            <div class="card border-1">
+                                <img src="assets/deals/Group 967.svg" style="margin-bottom:0;width:3vw;margin-top:0">
+                                <div class="cart-card-img mx-auto card border-0 overflow-hidden"
+                                    style="background-image:url('assets/product/42 1.png');">
+
+                                </div>
+                                <div class="trending card-body px-0 text-center">
+                                    <h5 class="card-title text-center mb-0">Disc Brake Pad</h5>
+                                    <p class="card-text">Mahindra Xylo</p>
+                                    <p class="card-text del-price"><del>&#x20b9;17.93</del><span
+                                            class="price">&nbsp;&nbsp;&#x20b9;13.45</span>
+                                    </p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+
+                                    <div>
+                                        <p class="quantity-txt ">Quantity :
+                                            <select class="form-select quantity-select " id="sel1" name="sellist1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn add-cart-btn w-100 py-2">Add to cart</button>
+                                    <div class="col py-2">
+                                        <button type="button"
+                                            class="btn btn-outline fullfilled-alp fa fa-check-square fa-2x"
+                                            aria-hidden="true">Fulfilled by ALP</button>
+                                        <button type="button"
+                                            class="btn btn-outline recommended-btn">Recommended</button>
+                                    </div>
+                                    <p class="get-it-by">Get it by : Tue, 5th May, 2022</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="col p-0">
+                    <div class="p-0 h-100">
+                        <div style="">
+                            <div class="card border-1">
+                                <img src="assets/deals/Group 967.svg" style="margin-bottom:0;width:3vw;margin-top:0">
+                                <div class="cart-card-img mx-auto card border-0 overflow-hidden"
+                                    style="background-image:url('assets/product/42 1.png');">
+
+                                </div>
+                                <div class="cart card-body px-0 text-center">
+                                    <h5 class="card-title text-center mb-0">Disc Brake Pad</h5>
+                                    <p class="card-text">Mahindra Xylo</p>
+                                    <p class="card-text del-price"><del>&#x20b9;17.93</del><span
+                                            class="price">&nbsp;&nbsp;&#x20b9;13.45</span>
+                                    </p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+
+                                    <div>
+                                        <p class="quantity-txt ">Quantity :
+                                            <select class="form-select quantity-select " id="sel1" name="sellist1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                    <button type="button" class="btn add-cart-btn w-100 py-2">Add to cart</button>
+                                    <div class="col py-2">
+                                        <button type="button"
+                                            class="btn btn-outline fullfilled-alp fa fa-check-square fa-2x"
+                                            aria-hidden="true">Fulfilled by ALP</button>
+                                        <button type="button"
+                                            class="btn btn-outline recommended-btn">Recommended</button>
+                                    </div>
+                                    <p class="get-it-by">Get it by : Tue, 5th May, 2022</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    .sort-by{
+        border-color:#787885;
+        border-width: 4px;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .quantity-txt {
+        font-size: 1.25vw;
+        font-weight: 600;
+        color: #0074B2;
+    }
+
+    .quantity-select {
+        width: 4.18vw;
+        height: 5vh;
+    }
+
+    .add-cart-btn {
+        background: #C4161C;
+        border-radius: 5.36364px;
+        color: #ffff;
+        font-size: 1.25vw;
+        font-weight: 600;
+    }
+
+    .fullfilled-alp {
+        border-radius: ;
+        font-size: 1.1vw;
+        font-weight: 400;
+        border-color: #0074B2;
+        color: #0074B2;
+        background: none;
+    }
+
+    .recommended-btn {
+        font-size: 1.1vw;
+        font-weight: 400;
+        background: #2999E4;
+        color: #ffff;
+    }
+
+    .get-it-by {
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: #0074B2;
+    }
+</style>

@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <title>Spares And Wears</title>
+
+</head>
+
+<body style="    background-color: #ececec;">
+  <!-- Ajax and jQuery link -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      //importing different sections
+      $("#header").load("header.html");
+      $("#footer").load("footer1.html");
+      $("#main-banner").load("sections/home/main-banner.html");
+      $("#trending").load("sections/home/trending.html");
+      $("#deals").load("sections/home/deals.html");
+      $("#first-purchase").load("sections/home/first-purchase.html");
+      $("#carousel").load("sections/home/carousel-items.html");
+      $("#carousel-home").load("sections/home/carousel-items.html");
+      $("#carousel-electronics").load("sections/home/carousel-items.html");
+      $("#carousel-sports").load("sections/home/carousel-items.html");
+      $("#bulk-deals").load("sections/home/bulk-deals.html");
+      $("#signin").load("sections/home/signin-button.html");
+      $("#carousel-new-product").load("sections/home/new-carousel-items.html");
+      $("#off").load("sections/home/off.html");
+      $("#spares-wears").load("sections/home/spares-wears.html");
+      $("#wishlist").load("sections/home/wishlist.html");
+
+    });
+  </script>
+
+  <div id="header"></div>
+  <!----------------------------------------------------- Body content --------------------------------------------------->
+
+
+  <!--------------------------------------------------- Main Banner import --------------------------------------------------->
+  <div class="container-fluid mt-2" id="main-banner"></div>
+
+
+  <!--------------------------------------------------- Trending Section --------------------------------------------------->
+  <div class="container-fluid p-4" id="trending"></div>
+
+
+  <!--------------------------------------------------- Deals Section --------------------------------------------------->
+  <div class="container-fluid px-4" id="deals"></div>
+
+
+  <!--------------------------------------------------- Save 10% on First Purchase --------------------------------------------------->
+  <div class="container-fluid py-4" id="first-purchase"></div>
+
+
+  <!--------------------------------------------------- Offers In Automotive --------------------------------------------------->
+
+  <div class="offers-section container-fluid px-4">
+    <div id="carouselExampleControlsoffersauto" class="carousel slide bg-white px-5 py-3" data-ride="carousel">
+      <p class="h1 offers mb-5">
+        Offers in <span style="color: #0074b2">Automotive</span>
+      </p>
+
+      <!---------------------------------------------------- import inner carousel here from carousel-items.html file---------------------------------------------------->
+      <span class="m-0 p-0" id="carousel"></span>
+
+      <a class="carousel-control-prev circle" href="#carouselExampleControlsoffersauto" role="button"
+        style="width:3%;opacity:1" data-slide="prev">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/prev.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Previous</span>
+        </div>
+      </a>
+      <a class="carousel-control-next circle" href="#carouselExampleControlsoffersauto" role="button"
+        style="width:3%;opacity:1" data-slide="next">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/next 2.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Next</span>
+        </div>
+      </a>
+      <div class="row"><button class="border-0 ml-auto mr-3 bg-transparent see-more">See more</button></div>
+    </div>
+  </div>
+
+
+  <!--------------------------------------------------- Offers In Home & Garden --------------------------------------------------->
+
+  <div class="offers-section container-fluid p-4">
+    <div id="carouselExampleControlsoffershome" class="carousel slide bg-white px-5 py-3" data-ride="carousel">
+      <p class="h1 offers mb-5">
+        Offers in <span style="color: #0074b2">Home & Garden</span>
+      </p>
+
+      <!---------------------------------------------------- import inner carousel here from carousel-items.html file---------------------------------------------------->
+      <span class="m-0 p-0" id="carousel-home"></span>
+
+
+      <a class="carousel-control-prev circle" href="#carouselExampleControlsoffershome" role="button"
+        style="width:3%;opacity:1" data-slide="prev">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/prev.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Previous</span>
+        </div>
+      </a>
+      <a class="carousel-control-next circle" href="#carouselExampleControlsoffershome" role="button"
+        style="width:3%;opacity:1" data-slide="next">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/next 2.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Next</span>
+        </div>
+      </a>
+      <div class="row"><button class="border-0 ml-auto mr-3 bg-transparent see-more">See more</button></div>
+    </div>
+  </div>
+
+
+  <!--------------------------------------------------- Offers In Electronics & Computers --------------------------------------------------->
+  <div class="offers-section container-fluid px-4">
+    <div id="carouselExampleControlsofferselectronics" class="carousel slide bg-white px-5 py-3"
+      data-ride="carousel">
+      <p class="h1 offers mb-5">
+        Offers in <span style="color: #0074b2">Electronics & Computers</span>
+      </p>
+
+      <!---------------------------------------------------- import inner carousel here from carousel-items.html file---------------------------------------------------->
+      <span class="m-0 p-0" id="carousel-electronics"></span>
+
+
+      <a class="carousel-control-prev circle" href="#carouselExampleControlsofferselectronics" role="button"
+        style="width:3%;opacity:1" data-slide="prev">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/prev.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Previous</span>
+        </div>
+      </a>
+      <a class="carousel-control-next circle" href="#carouselExampleControlsofferselectronics" role="button"
+        style="width:3%;opacity:1" data-slide="next">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/next 2.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Next</span>
+        </div>
+      </a>
+      <div class="row"><button class="border-0 ml-auto mr-3 bg-transparent see-more">See more</button></div>
+    </div>
+  </div>
+
+  <!--------------------------------------------------- Offers In Sports & Fitness --------------------------------------------------->
+  <div class="offers-section container-fluid p-4">
+    <div id="carouselExampleControlsofferssports" class="carousel slide bg-white px-5 py-3" data-ride="carousel">
+      <p class="h1 offers mb-5">
+        Offers in <span style="color: #0074b2">Sports & Fitness</span>
+      </p>
+
+      <!---------------------------------------------------- import inner carousel here from carousel-items.html file---------------------------------------------------->
+      <span class="m-0 p-0" id="carousel-sports"></span>
+
+
+      <a class="carousel-control-prev circle" href="#carouselExampleControlsofferssports" role="button"
+        style="width:3%;opacity:1" data-slide="prev">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/prev.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Previous</span>
+        </div>
+      </a>
+      <a class="carousel-control-next circle" href="#carouselExampleControlsofferssports" role="button"
+        style="width:3%;opacity:1" data-slide="next">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/next 2.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Next</span>
+        </div>
+      </a>
+      <div class="row"><button class="border-0 ml-auto mr-3 bg-transparent see-more">See more</button></div>
+    </div>
+  </div>
+
+  <!--------------------------------------------------- Bulk Buying Deals --------------------------------------------------->
+  <div class="container-fluid p-4 bg-white" id="bulk-deals"></div>
+
+  <!-- below two section will be shown either user is logged in or not -->
+
+  <!--------------------------------------------------- Sign In Section --------------------------------------------------->
+  <div class="container-fluid py-4" id="signin"></div>
+
+  <!--------------------------------------------------- wishlist and buy again benefits--------------------------------------------------->
+  <div class="container-fluid p-4" id="wishlist"></div>
+
+  <!--------------------------------------------------- New Products --------------------------------------------------->
+  <div class="offers-section container-fluid px-4">
+    <div id="carouselExampleControlsoffersnew-product" class="carousel slide bg-white px-5 py-3"
+      data-ride="carousel">
+      <p class="h1 offers mb-5">
+        New <span style="color: #0074b2">Products</span>
+      </p>
+
+      <!---------------------------------------------------- import inner carousel here from new-carousel-items.html file---------------------------------------------------->
+      <span class="m-0 p-0" id="carousel-new-product"></span>
+
+
+      <a class="carousel-control-prev circle" href="#carouselExampleControlsoffersnew-product" role="button"
+        style="width:3%;opacity:1" data-slide="prev">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/prev.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Previous</span>
+        </div>
+      </a>
+      <a class="carousel-control-next circle" href="#carouselExampleControlsoffersnew-product" role="button"
+        style="width:3%;opacity:1" data-slide="next">
+        <div
+          style="opacity: 1;width: 2.5vw;border-radius: 50%;background-color:#F5F5F5;height:2.5vw;box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.25);">
+          <img src="assets/prev-next/next 2.svg"
+            style="border-radius:50%;width:0.6vw;margin-top: 50%;transform: translateY(-50%);">
+          <span class="sr-only" style="color: #000 !important">Next</span>
+        </div>
+      </a>
+      <div class="row"><button class="border-0 ml-auto mr-3 bg-transparent see-more">See more</button></div>
+    </div>
+  </div>
+
+  <!--------------------------------------------------- 30 & 40 % off --------------------------------------------------->
+  <div class="container-fluid py-4" id="off"></div>
+
+  <!--------------------------------------------------- spares and wears benefits--------------------------------------------------->
+  <div class="container-fluid px-4 pb-4" id="spares-wears"></div>
+
+
+
+  <div id="footer"></div>
+
+</body>
+
+</html>
