@@ -1,0 +1,5 @@
+trending will accept multiple category ids with comma seperated
+http://localhost:8000/automobiletheme/trending-products?category-id=1,2
+
+discounted will accept only single category ids
+http://localhost:8000/automobiletheme/discounted-products?category-id=2
