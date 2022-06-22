@@ -9,4 +9,6 @@ Route::group([
             'view' => 'automobiletheme::admin.index',
         ])->name('admin.automobiletheme.index');
 
+        Route::get('/seed-category', 'HKSManpower\AutomobileTheme\Http\Controllers\Admin\AutomobileThemeController@createBulkCategories')
+            ->name('admin.automobiletheme.seed-category');
 });
