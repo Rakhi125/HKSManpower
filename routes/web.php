@@ -14,7 +14,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
-Route::get('/h', [HomeController::class, 'meenuitem']);
+//Route::get('/product', [HomeController::class, 'product'])->name('product');
+//Route::get('/automotive', [HomeController::class, 'automotive'])->name('automotive');
 
 
 

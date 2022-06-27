@@ -165,11 +165,14 @@ class SliderRepository extends Repository
      */
     public function getActiveSliders()
     {
+        
         $currentChannel = core()->getCurrentChannel();
 
         $currentLocale = core()->getCurrentLocale();
 
-        return $this->where('channel_id', $currentChannel->id)
+        //Remove where('banner-on-page', 'home' ) for showing all banners
+
+        return $this->where('channel_id', $currentChannel->id)->where('banner-on-page', 'home' )
             ->whereRaw("find_in_set(?, locale)", [$currentLocale->code])
             ->where(function ($query) {
                 $query->where('expired_at', '>=', Carbon::now()->format('Y-m-d'))
@@ -179,4 +182,26 @@ class SliderRepository extends Repository
             ->get()
             ->toArray();
     }
+
+    public function getActivePageSliders($page)
+    {
+      
+        $currentChannel = core()->getCurrentChannel();
+
+        $currentLocale = core()->getCurrentLocale();
+
+        return $this->where('channel_id', $currentChannel->id)->where('banner-on-page', $page )
+            ->whereRaw("find_in_set(?, locale)", [$currentLocale->code])
+            ->where(function ($query) {
+                $query->where('expired_at', '>=', Carbon::now()->format('Y-m-d'))
+                    ->orWhereNull('expired_at');
+            })
+            ->orderBy('sort_order', 'ASC')
+            ->get()
+            ->toArray();
+    }
+
+
 }
+
+

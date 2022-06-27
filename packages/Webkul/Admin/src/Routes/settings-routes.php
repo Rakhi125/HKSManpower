@@ -13,10 +13,6 @@ use Webkul\Tax\Http\Controllers\TaxRateController;
 use Webkul\User\Http\Controllers\RoleController;
 use Webkul\User\Http\Controllers\UserController;
 
-
-
-
-
 /**
  * Settings routes.
  */
@@ -222,12 +218,9 @@ Route::group(['middleware' => ['web', 'admin', 'admin_locale'], 'prefix' => conf
     Route::get('/slider/create', [SliderController::class, 'create'])->defaults('_config', [
         'view' => 'admin::settings.sliders.create',
     ])->name('admin.sliders.create');
-
-    
    
    // Route::get('admin/slider/newcreate', [SliderController::class, 'newcreate']);
 
-    
 
     Route::post('slider/create', [SliderController::class, 'store'])->defaults('_config', [
         'redirect' => 'admin.sliders.index',
@@ -304,5 +297,6 @@ Route::group(['middleware' => ['web', 'admin', 'admin_locale'], 'prefix' => conf
 });
 
 Route::POST('admin/slider/new_create', [SliderController::class, 'new_create']);
+
 
 

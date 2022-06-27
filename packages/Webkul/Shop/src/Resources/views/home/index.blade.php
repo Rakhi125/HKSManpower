@@ -1,3 +1,4 @@
+
 @extends('shop::layouts.master')
 
 @php

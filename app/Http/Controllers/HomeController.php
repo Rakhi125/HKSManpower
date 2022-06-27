@@ -7,12 +7,21 @@ class HomeController extends Controller
 {
     //
 
-public function meenuitem()
+public function product()
 
 {
     //It is for testing purpose which route is in "Bagisto-Real/route"
     //dd("xyz");
-    return view('test');
+    return view('product');
+
+}
+
+public function automotive()
+
+{
+    //It is for testing purpose which route is in "Bagisto-Real/route"
+    //dd("xyz");
+    return view('automotive');
 
 }
 

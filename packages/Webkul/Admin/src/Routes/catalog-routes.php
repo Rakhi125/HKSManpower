@@ -164,3 +164,6 @@ Route::group(['middleware' => ['web', 'admin', 'admin_locale'], 'prefix' => conf
         Route::post('/families/delete/{id}', [AttributeFamilyController::class, 'destroy'])->name('admin.catalog.families.delete');
     });
 });
+
+
+//Route::get('/automotive', [ProductController::class, 'automotive'])->name('automotive');

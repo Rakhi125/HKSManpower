@@ -1260,13 +1260,17 @@
 
 
                   end customized part -->
+
+
+
+
                   <div class="content">
         <form
             method="POST"
             @submit.prevent="onSubmit"
             enctype="multipart/form-data"
             action="{{ route('admin.sliders.create') }}">
-
+            <meta name="csrf-token" content="{{ csrf_token() }}">
             <div class="page-header">
                 <div class="page-title">
                     <h1>
@@ -1396,7 +1400,7 @@
 </select>
 
 <div id="simple_div" style="display:none;">
-{!! view_render_event('bagisto.admin.settings.slider.create.after') !!}
+<!-- {!! view_render_event('bagisto.admin.settings.slider.create.after') !!} -->
 </div>
 
 <div id="hidden_div" style="display:none;">
@@ -1419,8 +1423,10 @@
                                 
                             <select id="discount" name="discount" style="width:100%" >
                              <option value="" > %off</option>
-                             <option value="10%">10%</option>
-                             <option value="20%">20%</option>
+                             <option value="5">5%</option>
+                             <option value="10">10%</option>
+                             <option value="15">15%</option>
+                             <option value="20">20%</option>
                              </select>
                             
                             
@@ -1455,6 +1461,10 @@
             
         </div>
     </div>
+
+    <div style="margin-left:10px" >
+{!! view_render_event('bagisto.admin.settings.slider.create.after') !!}
+</div>
 
 <!-- end discount banner data -->
 

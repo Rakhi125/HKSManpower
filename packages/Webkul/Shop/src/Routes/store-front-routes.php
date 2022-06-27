@@ -43,6 +43,14 @@ Route::group(['middleware' => ['web', 'locale', 'theme', 'currency']], function 
         'view' => 'shop::home.index',
     ])->name('shop.home.index');
 
+    Route::get('/catalog/{page}', [HomeController::class, 'catalog'])->defaults('_config', [
+        'view' => 'shop::home.catalog',
+    ])->name('shop.home.catalog');
+
+    Route::get('/catalog/{product_category}/{sub_category}/{off}', [HomeController::class, 'offer'])->defaults('_config', [
+        'view' => 'shop::home.offer',
+    ])->name('shop.home.offer');
+
     /**
      * Store front search.
      */

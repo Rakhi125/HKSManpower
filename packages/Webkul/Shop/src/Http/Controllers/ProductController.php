@@ -193,4 +193,12 @@ class ProductController extends Controller
             'max_price' => $maxPrice,
         ]);
     }
+
+
+
+    public function automotive()
+    {
+
+        return view('');
+    }
 }

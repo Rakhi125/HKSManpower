@@ -80,4 +80,50 @@ class HomeController extends Controller
     {
         return $this->searchRepository->uploadSearchImage(request()->all());
     }
+
+
+    public function catalog($page)
+
+    {
+
+        //dd($page);
+        $sliderData = $this->sliderRepository->getActivePageSliders($page);
+                
+        $users = DB::table('users')->select('id','name')->get();
+        //$products= DB::table('products')->select('id','name','sku','type')->get();
+        
+        //$products=DB::table('products')->select('clicks','id')->orderBy('clicks','DESC')->limit(2)->get();
+        $products=DB::table('products')->orderBy('clicks','DESC')->limit(2)
+        ->join('product_images','product_images.product_id','=','products.id')->get();
+        
+        //dd($products);
+        return view($this->_config['view'], compact('sliderData', 'users', 'products' ));
+    }
+
+    public function offer($product_category, $sub_category, $off )
+
+    {
+
+        //dd($product_category, $sub_category, $off);
+        
+
+     /*
+        //dd($page);
+        $sliderData = $this->sliderRepository->getActiveofferSliders($page);
+                
+        $users = DB::table('users')->select('id','name')->get();
+        //$products= DB::table('products')->select('id','name','sku','type')->get();
+        
+        //$products=DB::table('products')->select('clicks','id')->orderBy('clicks','DESC')->limit(2)->get();
+        $products=DB::table('products')->orderBy('clicks','DESC')->limit(2)
+        ->join('product_images','product_images.product_id','=','products.id')->get();
+        
+        //dd($products);
+        return view($this->_config['view'], compact('sliderData', 'users', 'products' ));
+       */
+      $sliderData = $this->sliderRepository->getActivePageSliders($product_category);
+      return view($this->_config['view'], compact('sliderData'));
+
+    }
+
 }
